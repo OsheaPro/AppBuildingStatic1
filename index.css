@@ -1,0 +1,62 @@
+/* Custom Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  background: #f8d7da;
+  background-image: url('https://via.placeholder.com/1920x600?text=Saitama+Hero+Background');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-text {
+  color: #666;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffc107;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+}
