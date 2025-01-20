@@ -3,16 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saitama Anime Merch</title>
+  <title>Saitama Merch - Official Merchandise</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ6F4p8o9vP8chckn1APhO0b81Xbgq9OBsiCVII5OVYZdYdTEuA0kS/eVZ4B" crossorigin="anonymous">
-  <!-- External Custom CSS -->
-  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJr+Y4olBT0pcfjj9JUAXtKov3pYzQ4VK6z9hXyP5qjjlWX7VJw9Xjba9lmF" crossorigin="anonymous">
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    .navbar {
+      background-color: #333;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #fff;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #f8c920;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1500x500') center center no-repeat;
+      background-size: cover;
+      height: 500px;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .card {
+      border: none;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #f8c920;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
       <a class="navbar-brand" href="#">Saitama Merch</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,13 +90,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -37,73 +107,73 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="hero" class="hero text-center text-light py-5">
+  <section id="hero" class="hero">
     <div class="container">
-      <h1 class="display-3">Unleash Your Power with Saitama Merch</h1>
-      <p class="lead">Official One Punch Man merchandise. Get your gear today!</p>
-      <a href="#shop" class="btn btn-warning btn-lg">Shop Now</a>
+      <h1>Your Favorite Saitama Merch, Now Available!</h1>
     </div>
   </section>
 
   <!-- Carousel -->
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://via.placeholder.com/1200x400?text=Saitama+Figure" class="d-block w-100" alt="Saitama Figure">
+  <section id="carousel" class="my-5">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Item 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Item 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Item 3">
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="https://via.placeholder.com/1200x400?text=Merchandise+Collection" class="d-block w-100" alt="Merchandise Collection">
-      </div>
-      <div class="carousel-item">
-        <img src="https://via.placeholder.com/1200x400?text=Anime+Posters" class="d-block w-100" alt="Anime Posters">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </section>
 
-  <!-- Heading Section -->
-  <section id="shop" class="text-center py-5 bg-light">
-    <h2 class="display-4">Featured Products</h2>
-    <p>Explore our exclusive collection of Saitama merch!</p>
+  <!-- Heading -->
+  <section class="container my-5 text-center">
+    <h2>Browse Our Latest Saitama Merchandise</h2>
+    <p>Get the best of Saitama gear, now just a click away.</p>
   </section>
 
   <!-- Cards Section -->
-  <section class="container py-5">
+  <section class="container">
     <div class="row">
       <div class="col-md-4">
         <div class="card">
-          <img src="https://via.placeholder.com/300x200?text=Saitama+Action+Figure" class="card-img-top" alt="Saitama Action Figure">
-          <div class="card-body">
-            <h5 class="card-title">Saitama Action Figure</h5>
-            <p class="card-text">High-quality action figure of Saitama. Perfect for collectors.</p>
-            <a href="#" class="btn btn-danger">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200?text=Saitama+Poster" class="card-img-top" alt="Saitama Poster">
-          <div class="card-body">
-            <h5 class="card-title">Saitama Poster</h5>
-            <p class="card-text">A beautiful poster of Saitama to decorate your room!</p>
-            <a href="#" class="btn btn-danger">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200?text=Saitama+T-Shirt" class="card-img-top" alt="Saitama T-Shirt">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Merch 1">
           <div class="card-body">
             <h5 class="card-title">Saitama T-Shirt</h5>
-            <p class="card-text">Comfortable and stylish Saitama-themed t-shirt.</p>
-            <a href="#" class="btn btn-danger">Add to Cart</a>
+            <p class="card-text">$19.99</p>
+            <a href="#" class="btn btn-warning">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Merch 2">
+          <div class="card-body">
+            <h5 class="card-title">Saitama Hoodie</h5>
+            <p class="card-text">$39.99</p>
+            <a href="#" class="btn btn-warning">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Merch 3">
+          <div class="card-body">
+            <h5 class="card-title">Saitama Poster</h5>
+            <p class="card-text">$9.99</p>
+            <a href="#" class="btn btn-warning">Add to Cart</a>
           </div>
         </div>
       </div>
@@ -111,16 +181,18 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
-    <p>&copy; 2025 Saitama Merch. All rights reserved.</p>
-    <p>Follow us on:</p>
-    <a href="#" class="text-white me-2">Facebook</a>
-    <a href="#" class="text-white me-2">Instagram</a>
-    <a href="#" class="text-white">Twitter</a>
+  <footer class="footer mt-5">
+    <p>&copy; 2025 Saitama Merch. All Rights Reserved.</p>
+    <p>Follow us on 
+      <a href="#">Instagram</a>, 
+      <a href="#">Twitter</a>, 
+      <a href="#">Facebook</a>
+    </p>
   </footer>
 
-  <!-- Bootstrap JS and Popper.js -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBfd4JdXyIae1muTOnj9+eTQ1v7As2zrlC7yW7KmEXQfrV6gD" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0f9pA2nAvTkp3YWb9GjjdG8AG0fe2Q7yZfP2vJk5BYhRmSml" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybB3vsDdX7wv7OHkRpPqTztgldz3+4VmdhXyOD6wzYh0pF2jo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqVYg2xE24t+ksmVp5gGjEnayKxa1p6ljCok/5HqaGHCo" crossorigin="anonymous"></script>
+
 </body>
 </html>
